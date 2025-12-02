@@ -285,7 +285,10 @@ header nav .icons a:hover {
 
 .hero .btn {
     font-size: 20px;
-    padding: 18px 50px;
+    padding: 18px 30px;
+    &:hover{
+        opacity: 70%;
+    }
 }
 
 .hero .div_img {
@@ -293,7 +296,10 @@ header nav .icons a:hover {
     position: relative;
     border-radius: 0 0 600px 600px;
     overflow: hidden;
-}
+
+
+    }
+
 
 .hero .div_img .bg_img {
     position: absolute;
@@ -335,6 +341,7 @@ header nav .icons a:hover {
 
 .about .div_text p {
     line-height: 1.8;
+    
 }
 
 .about .div_text ul {
@@ -360,43 +367,111 @@ header nav .icons a:hover {
     width: 35%;
 }
 
-/* start  services */
+/* skills */
 
-.services .boxs {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.skills {
+  padding: 60px 0;
+  background-color: #111;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.services .boxs .box {
-    width: 30%;
-    text-align: center;
-    padding: 50px 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    transition: 0.3s;
+.skills .top_section {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.services .boxs .box i {
-    color: var(--main_color);
-    font-size: 70px;
-    margin-bottom: 30px;
+.skills .top_section h2 {
+  font-size: 36px;
+  font-weight: 700;
 }
 
-.services .boxs .box h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
+.skills .top_section h2 span {
+  color: #a8ff35;
 }
 
-.services .boxs .box p {
-    margin-bottom: 40px;
-    font-size: 14px;
-    line-height: 1.7;
+.skills_boxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.services .boxs .box:hover {
-    border-color: var(--main_color);
+.skill_box {
+  background: #222;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(168, 255, 53, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
+
+.skill_box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(168, 255, 53, 0.8);
+  cursor: pointer;
+}
+
+.skill_box i,
+.skill_box img {
+  font-size: 70px;
+  color: #a8ff35;
+  margin-bottom: 20px;
+}
+
+.skill_box img.tailwind-icon {
+  width: 70px;
+  height: 70px;
+  filter: brightness(0) saturate(100%) invert(53%) sepia(81%) saturate(2116%) hue-rotate(74deg) brightness(92%) contrast(96%);
+  /* فلتر يعطي لون أخضر مشابه */
+  margin-bottom: 20px;
+}
+
+.skill_box h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.skill_box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .skill_box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill_box {
+    width: 100%;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 850px) {
+  .skills_boxs {
+    justify-content: center;
+  }
+
+  .skill_box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill_box {
+    width: 100%;
+  }
+}
+
 
 /* start projects */
 
@@ -407,7 +482,7 @@ header nav .icons a:hover {
     margin-bottom: 50px;
 }
 
-.projects .project_box img {
+.projects .project_box img a {
     width: 45%;
 }
 

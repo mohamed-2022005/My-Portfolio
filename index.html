@@ -1,265 +1,335 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio | Mahmoud</title>
-    
-        <link rel="icon" href="img/logo_icon.png">
-    
-    
-        <!-- File CSS -->
-         <link rel="stylesheet" href="css/style.css">
-    
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
-  <body>
-    <div class="bg-lines">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
-    <header>
-      <nav class="container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mahmoud</title>
+
+  <link rel="icon" href="img/logo_icon.png">
+
+
+  <!-- File CSS -->
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  
+</head>
+
+<body>
+  <div class="bg-lines">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header>
+    <nav class="container" style="display: flex; align-items: center; justify-content: space-between;">
+
+      <div style="display: flex; align-items: center; gap: 10px;">
+
+        <a href="#" class="logo">
+          <img  src="img/mohamed.png" alt="" />
+        </a>
+       
+      </div>
+
+      <div class="links" id="nav_links">
+        <span onclick="op_cl_Menu()" class="layer"></span>
+        <span onclick="op_cl_Menu()" class="close_menu">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
         <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Us</a>
+      </div>
 
-        <div class="links" id="nav_links">
-          <span onclick="op_cl_Menu()" class="layer"></span>
-          <span onclick="op_cl_Menu()" class="close_menu"
-            ><i class="fa-solid fa-xmark"></i
-          ></span>
-          <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-          <a class="active" href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">services</a>
-          <a href="#projects">projects</a>
-          <a href="#contact">contact</a>
-        </div>
+      <div class="icons">
 
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <span onclick="op_cl_Menu()" class="icon_menu"
-            ><i class="fa-solid fa-bars"></i
-          ></span>
-        </div>
-      </nav>
-    </header>
+        <a href="https://www.facebook.com/mohamed.hesham.253053" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
 
-    <div class="hero" id="home">
-      <div class="container">
-        <div class="div_text">
-          <h4>Hello, i 19m</h4>
-          <h1><span>Mahmoud R.</span></h1>
-          <h2>web designer</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            quas sunt alias nulla veniam aliquam, explicabo doloribus tempore!
-            Alias, veritatis?
-          </p>
+        <a href="https://github.com/mohamed-2022005" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
 
-          <div class="btns">
-            <a href="#" class="btn">hire me </a>
-            <a href="#" class="btn_no_Bg"> Download Resume</a>
-          </div>
+        <a href="https://www.instagram.com/_mo7amed__33/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mohamed-hesham-99550234a" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+
+        <span onclick="op_cl_Menu()" class="icon_menu">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="hero" id="home">
+    <div class="container">
+      <div class="div_text">
+        <h4>Hi, I'm 20</h4>
+        <h1><span>Mohamed H.</span></h1>
+        <h2>web Developer</h2>
+        <p>I’m Mohamed Hesham, a Front-End Developer skilled in React.js, Bootstrap, Tailwind CSS, and web design. I
+          build responsive and user-friendly web applications focused on performance and clean code. Always eager to
+          learn and grow in the tech industry.</p>
+
+        <div class="btns">
+
+          <a href="img/CV.pdf" class="btn" download="CV.pdf" target="_blank"> Download Resume</a>
         </div>
-        <div class="div_img">
-          <img class="person" src="img/home.png" alt="" />
-          <img class="bg_img" src="img/bg_img_home.png" alt="" />
-        </div>
+      </div>
+      <div class="div_img">
+        <img class="person" src="img/1709247888345-removebg-preview.png" alt="" />
+        <img class="bg_img" src="img/bg_img_home.png" alt="" />
       </div>
     </div>
+  </div>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="div_text">
-          <h5>about me</h5>
-          <h2><span>I'm a Developer</span></h2>
-          <h4>I Develop Application that Help People</h4>
-          <!-- lorem 26 -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="div_text">
+        <h5>About Me</h5>
+        <h2><span>I'm a Developer</span></h2>
+        <h4>I develop applications that help people</h4>
+
+        <p>
+          I am passionate about creating user-friendly and efficient applications that solve real-world problems. With
+          experience in front-end development and a focus on clean, maintainable code, I strive to deliver great user
+          experiences.
+        </p>
+
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Front-End Development</li>
+          <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+          <li><i class="fa-solid fa-check"></i> UI Design & Prototyping</li>
+          <li><i class="fa-solid fa-check"></i> Performance Optimization</li>
+
+        </ul>
+
+        <a href="img/CV.pdf" class="btn" download="cv.pdf" target="_blank">Download CV</a>
+      </div>
+
+      <div class="div_img">
+   <img 
+  src="img/1709247888345.jpg" 
+  alt="" 
+  style="border-radius: 10%; box-shadow: 0 0 20px 5px #C9F31D; transition: transform 0.3s ease ;cursor: pointer;" 
+  onmouseover="this.style.transform='scale(1.05)'" 
+  onmouseout="this.style.transform='scale(1)'"
+/>
+
+      </div>
+    </div>
+    
+  </section>
+
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="top_section">
+      <h2>My <span>Skills</span></h2>
+    </div>
+
+    <div class="skills_boxs">
+      <div class="skill_box">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Expertise in semantic and responsive markup.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Styling with Flexbox, Grid, and animations.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-brands fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <p>Dynamic functionality and interactive UIs.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-brands fa-react"></i>
+        <h3>React</h3>
+        <p>Building component-based, reusable UI.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-brands fa-git-alt"></i>
+        <h3>Git & GitHub</h3>
+        <p>Version control and collaborative development.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-solid fa-database"></i>
+        <h3>Strapi</h3>
+        <p>Headless CMS for easy API creation and content management.</p>
+      </div>
+
+      <div class="skill_box">
+        <i class="fa-brands fa-bootstrap"></i>
+        <h3>Bootstrap</h3>
+        <p>Responsive design with prebuilt components.</p>
+      </div>
+
+      <div class="skill_box">
+        <!-- استخدم صورة SVG مع فلتر لون أخضر -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" class="tailwind-icon" />
+        <h3>Tailwind CSS</h3>
+        <p>Utility-first CSS framework for rapid UI development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="top_section">
+        <h2>Explore My Popular <span>Projects</span></h2>
+      </div>
+
+      <div class="project_box">
+
+        <a href="https://mohamed-2022005.github.io/restaurant/" target="_blank">
+          <img   src="img/fgfgfg.jpg" alt="" />
+        </a>
+
+        <div class="text">
+          <h4><span>Restaurant Project</span></h4>
+          <h3><a href="#">Delicious Food & Unique Experience</a></h3>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-            eveniet delectus nesciunt, sed, esse maiores porro iste enim
-            molestiae saepe laboriosam unde similique magnam, repudiandae minus!
+            A modern restaurant offering high-quality dishes prepared with fresh
+            ingredients. We focus on great taste, clean presentation, and a comfortable
+            dining experience for all customers.
           </p>
 
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Web Development</li>
-            <li><i class="fa-solid fa-check"></i> UI / UX Design</li>
-            <li><i class="fa-solid fa-check"></i>Digital Marketing</li>
-            <li><i class="fa-solid fa-check"></i>Product Design</li>
-          </ul>
-
-          <a href="img/about.jpg" class="btn" download="">Download CV</a>
-        </div>
-
-        <div class="div_img">
-          <img src="img/about.jpg" alt="" />
+          <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
       </div>
-    </section>
+
+      <div class="project_box project_box2">
+        <div class="text">
+          <h4><span>InstaPay Project</span></h4>
+          <h3><a href="#">Simple Mobile Payments — Deposit, Withdraw & Transfer</a></h3>
+
+          <p>
+            Fast and secure mobile payments: instant deposits and withdrawals, send and
+            request money, check your balance and view transaction history. Built for
+            simplicity and speed.
+          </p>
 
 
-
-    <section id="services" class="services">
-      <div class="container">
-        <div class="top_section">
-          <h2>Our <span>Services</span></h2>
+          <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
 
-        <div class="boxs">
-          <div class="box">
-            <i class="fa-solid fa-pen-ruler"></i>
-            <h3>Web Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              neque reprehenderit tempora? Harum provident dolorum
-              exercitationem in.
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-
-          <div class="box">
-            <i class="fa-solid fa-rocket"></i>
-            <h3>Fast Performance</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              neque reprehenderit tempora? Harum provident dolorum
-              exercitationem in.
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-
-          <div class="box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Clean Code</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              neque reprehenderit tempora? Harum provident dolorum
-              exercitationem in.
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="top_section">
-          <h2>Explore My Popular <span>Projects</span></h2>
-        </div>
-
-        <div class="project_box">
-          <img src="img/project1.jpg" alt="" />
-
-          <div class="text">
-            <h4><span>Product Design</span></h4>
-            <h3><a href="#">Website Makeup Design</a></h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              distinctio commodi possimus!.
-            </p>
-
-            <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-          </div>
-        </div>
-
-        <div class="project_box project_box2">
-          <div class="text">
-            <h4><span>Product Design</span></h4>
-            <h3><a href="#">Website Makeup Design</a></h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              distinctio commodi possimus!.
-            </p>
-
-            <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-          </div>
-
-          <img src="img/project2.jpg" alt="" />
-        </div>
-
-        <div class="project_box">
-          <img src="img/project3.jpg" alt="" />
-
-          <div class="text">
-            <h4><span>Product Design</span></h4>
-            <h3><a href="#">Website Makeup Design</a></h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              distinctio commodi possimus!.
-            </p>
-
-            <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-          </div>
-        </div>
-
-        <div class="project_box project_box2">
-          <div class="text">
-            <h4><span>Product Design</span></h4>
-            <h3><a href="#">Website Makeup Design</a></h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              distinctio commodi possimus!.
-            </p>
-
-            <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-          </div>
-
-          <img src="img/project4.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="top_section">
-        <h2>Contact <span>Me</span></h2>
+        <a href="https://task-instapay.vercel.app/" target="_blank">
+          <img src="img/2432630_0.jpg" alt="" />
+        </a>
       </div>
 
-      <div class="container">
-        <div class="soial-contact">
-          <h2>Follow Me</h2>
-          <div class="links">
-            <a href="mailto:redaoda86@gmail.com"
-              ><i class="fa-solid fa-envelope"></i> example@mail.com</a
-            >
-            <a href="tel:+201112119676"><i class="fa-solid fa-phone"></i> 0123456789</a>
-            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-          </div>
+      <div class="project_box" >
+        <a href="https://mohamed-2022005.github.io/project-Headphone/" target="_blank">
+          <img  src="img/BW_PLP-Update_Px8-S2-McLaren_1237750-min.webp" alt="" />
+        </a>
+
+        <div class="text">
+          <h4><span>Audiophile Project</span></h4>
+          <h3><a href="#">Premium Audio Gear for True Sound Lovers</a></h3>
+
+          <p>
+            High-end headphones, speakers, and earphones designed to deliver pure,
+            lifelike sound. Built with premium materials and engineered for audio
+            enthusiasts who want exceptional clarity and performance.
+          </p>
+
+
+          <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-
-        <form action="">
-          <div class="inpts-form">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Mobile Number" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              name=""
-              id=""
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button href="#" class="btn">Send Message</button>
-        </form>
       </div>
-    </section>
 
-    <script src="js/main.js"></script>
-  </body>
+      <div class="project_box project_box2">
+        <div class="text">
+          <h4><span> Book Project</span></h4>
+          <h3><a href="#">Best-Selling Book by William Gilbert</a></h3>
+
+          <p>
+            A powerful and inspiring book written by William Gilbert, offering practical
+            insights and personal development guidance for readers worldwide.
+          </p>
+
+
+          <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+        </div >
+        <a href="https://project-mybooks.vercel.app/" target="_blank">
+          <img   src="img/lifestyle-people-office_23-21491.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="top_section">
+      <h2>Contact Us <span>Me</span></h2>
+    </div>
+
+    <div class="container">
+      <div class="soial-contact">
+        <h2>Follow Me</h2>
+        <div class="links">
+          <a href="mailto:mohamed.hesham.mohamed.alii@gmail.com">
+            <i class="fa-solid fa-envelope"></i> mohamed@gmail.com
+          </a>
+          <a href="tel:+201148836948">
+            <i class="fa-solid fa-phone"></i> 01148836948
+          </a>
+          <a href="https://www.facebook.com/mohamed.hesham.253053" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-hesham-99550234a" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://www.instagram.com/_mo7amed__33/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+
+        </div>
+      </div>
+
+      <form action="">
+        <div class="inpts-form">
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Mobile Number" />
+          <input type="text" placeholder="Subject" />
+          <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
+        </div>
+        <button href="#" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
