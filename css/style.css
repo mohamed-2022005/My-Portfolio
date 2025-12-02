@@ -874,3 +874,23 @@ header nav .icons a:hover {
         font-size: 22px;
     }
 }
+@media (max-width: 600px) {
+
+  /* إخفاء أيقونات السوشيال فقط */
+  header nav .icons a {
+    display: none;
+  }
+
+  /* إبقاء زرار المنيو ظاهر */
+  header nav .icons .icon_menu {
+    display: block;
+    padding-right: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav .logo img {
+    width: 180px; /* حجم أكبر من الافتراضي */
+  }
+}
+
