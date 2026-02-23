@@ -426,13 +426,13 @@ header nav .icons a:hover {
   margin-bottom: 20px;
 }
 
-.skill_box img.tailwind-icon {
+.skill_box img {
   width: 70px;
   height: 70px;
-  filter: brightness(0) saturate(100%) invert(53%) sepia(81%) saturate(2116%) hue-rotate(74deg) brightness(92%) contrast(96%);
-  /* فلتر يعطي لون أخضر مشابه */
   margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(82%) saturate(500%) hue-rotate(30deg) brightness(105%) contrast(105%);
 }
+
 
 .skill_box h3 {
   font-size: 24px;
