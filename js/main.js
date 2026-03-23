@@ -21,27 +21,6 @@ document.querySelectorAll("#nav_links a").forEach(link => {
     op_cl_Menu(); 
   });
 });
-const observerOptions = {
-    threshold: 0.2 
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-        
-            entry.target.classList.add('active');
-        } else {
-
-            entry.target.classList.remove('active');
-        }
-    });
-}, observerOptions);
 
 
-document.querySelectorAll('section, .hero').forEach(section => {
-    observer.observe(section);
-});
-// راقب السكاشن والـ project_box عشان الانميشن يشتغل لكل مشروع لوحده
-document.querySelectorAll('section, .hero, .project_box').forEach(el => {
-    observer.observe(el);
-});
+
