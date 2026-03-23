@@ -312,7 +312,53 @@ header nav .icons a:hover {
     left: 0;
     z-index: -1;
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.hero .div_text h4, 
+.hero .div_text h1, 
+.hero .div_text h2, 
+.hero .div_text p, 
+.hero .btns,
+.hero .div_img {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+
+.hero.active .div_text h4, 
+.hero.active .div_text h1, 
+.hero.active .div_text h2, 
+.hero.active .div_text p, 
+.hero.active .btns {
+    animation: fadeInUp 0.8s ease forwards;
+    pointer-events: auto;
+}
+
+.hero.active .div_img {
+    animation: scaleIn 1s ease forwards;
+    pointer-events: auto;
+}
+
+.hero.active .div_text h4 { animation-delay: 0.1s; }
+.hero.active .div_text h1 { animation-delay: 0.2s; }
+.hero.active .div_text h2 { animation-delay: 0.3s; }
+.hero.active .div_text p  { animation-delay: 0.4s; }
+.hero.active .btns        { animation-delay: 0.5s; }
+.hero.active .div_img     { animation-delay: 0.6s; }
 /* about */
 
 .about .container {
@@ -371,6 +417,47 @@ header nav .icons a:hover {
 .about .div_img {
     width: 35%;
 }
+
+.about .div_text h5, 
+.about .div_text h2, 
+.about .div_text h4, 
+.about .div_text p, 
+.about .div_text ul li, 
+.about .div_text .btn,
+.about .div_img {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.about.active .div_text h5, 
+.about.active .div_text h2, 
+.about.active .div_text h4, 
+.about.active .div_text p, 
+.about.active .div_text .btn {
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+.about.active .div_img {
+    animation: scaleIn 0.8s ease forwards;
+}
+
+
+.about.active .div_text ul li {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.about.active .div_text h5 { animation-delay: 0.1s; }
+.about.active .div_text h2 { animation-delay: 0.2s; }
+.about.active .div_text h4 { animation-delay: 0.3s; }
+.about.active .div_text p  { animation-delay: 0.4s; }
+
+.about.active .div_text ul li:nth-child(1) { animation-delay: 0.5s; }
+.about.active .div_text ul li:nth-child(2) { animation-delay: 0.6s; }
+.about.active .div_text ul li:nth-child(3) { animation-delay: 0.7s; }
+.about.active .div_text ul li:nth-child(4) { animation-delay: 0.8s; }
+
+.about.active .div_text .btn { animation-delay: 0.9s; }
+.about.active .div_img { animation-delay: 0.5s; }
 
 /* skills */
 
@@ -445,6 +532,46 @@ header nav .icons a:hover {
   line-height: 1.6;
   color: #ccc;
 }
+
+@keyframes fastReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(40px);
+        filter: blur(12px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+}
+
+.skills .skill_box {
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.skills.active .skill_box {
+    animation: fastReveal 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.skills.active .skill_box:nth-child(1) { animation-delay: 0.05s; }
+.skills.active .skill_box:nth-child(2) { animation-delay: 0.10s; }
+.skills.active .skill_box:nth-child(3) { animation-delay: 0.15s; }
+.skills.active .skill_box:nth-child(4) { animation-delay: 0.20s; }
+.skills.active .skill_box:nth-child(5) { animation-delay: 0.25s; }
+.skills.active .skill_box:nth-child(6) { animation-delay: 0.30s; }
+.skills.active .skill_box:nth-child(7) { animation-delay: 0.35s; }
+.skills.active .skill_box:nth-child(8) { animation-delay: 0.40s; }
+.skills.active .skill_box:nth-child(9) { animation-delay: 0.45s; }
+.skills.active .skill_box:nth-child(10) { animation-delay: 0.50s; }
+
+.skill_box:hover {
+    transform: translateY(-10px) scale(1.05) !important;
+    box-shadow: 0 10px 30px rgba(168, 255, 53, 0.4);
+}
+
+    
 
 /* Responsive */
 @media (max-width: 850px) {
@@ -637,10 +764,91 @@ header nav .icons a:hover {
     scale: 1.1;
 }
 
+.contact .soial-contact {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.contact form {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+.contact .inpts-form input, 
+.contact .inpts-form textarea, 
+.contact form .btn {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.contact.active .soial-contact,
+.contact.active form {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact.active .inpts-form input, 
+.contact.active .inpts-form textarea, 
+.contact.active form .btn {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.contact.active .inpts-form input:nth-child(1) { animation-delay: 0.3s; }
+.contact.active .inpts-form input:nth-child(2) { animation-delay: 0.4s; }
+.contact.active .inpts-form input:nth-child(3) { animation-delay: 0.5s; }
+.contact.active .inpts-form input:nth-child(4) { animation-delay: 0.6s; }
+.contact.active .inpts-form textarea { animation-delay: 0.7s; }
+.contact.active form .btn { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .icon_menu,
 .close_menu,
 .links .logo {
     display: none;
+}
+
+.projects .project_box .text {
+    opacity: 0;
+    transform: translateX(-100px); 
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.projects .project_box img {
+    opacity: 0;
+    transform: translateX(100px) scale(0.8); 
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.projects .project_box2 .text {
+    transform: translateX(100px); 
+}
+
+.projects .project_box2 img {
+    transform: translateX(-100px) scale(0.8);
+}
+
+.projects .project_box.active .text,
+.projects .project_box.active img {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.projects .project_box img {
+    box-shadow: 0 0 0px var(--main_color);
+    transition: 0.5s ease;
+}
+
+.projects .project_box:hover img {
+    box-shadow: 0 0 30px rgba(168, 255, 53, 0.3);
+    scale: 1.02;
 }
 
 @media (max-width:1000px) {
